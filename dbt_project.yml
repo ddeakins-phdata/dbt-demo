@@ -1,0 +1,13 @@
+# dbt_project.yml
+
+name: 'dbt_demo'
+version: '1.0'
+
+profile: 'dbt_demo'
+source-paths: ['models']
+analysis-paths: []
+test-paths: ['tests']
+macro-paths: ['macros']
+models:
+  +:
+    materialized: table
